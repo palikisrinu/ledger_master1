@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ledger-backend
-    env:docker
-    buildCommand: "./mvnw clean package"
-    startCommand: "java -jar target/*.jar"
+    name: springboot-backend
+    env: docker
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/*.jar
