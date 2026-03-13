@@ -1,6 +1,6 @@
 services:
   - type: web
     name: ledger-backend
-    runtime: java
+    env:docker
     buildCommand: "./mvnw clean package"
     startCommand: "java -jar target/*.jar"
