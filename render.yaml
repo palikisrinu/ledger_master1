@@ -1,5 +1,0 @@
-services:
-  - type: web
-    name: springboot-backend
-    buildCommand: ./mvnw clean package
-    startCommand: java -jar target/*.jar
