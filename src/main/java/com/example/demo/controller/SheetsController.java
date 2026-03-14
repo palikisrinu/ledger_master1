@@ -19,7 +19,7 @@ import com.example.demo.service.GoogleSheetsService;
 
 @RestController
 @RequestMapping("/ledger")
-@CrossOrigin(origins = "https://ledger-master1.onrender.com")
+@CrossOrigin(origins = "https://tranquil-macaron-29a87f.netlify.app")
 public class SheetsController {
 	 private final GoogleSheetsService googleSheetsService;
 
