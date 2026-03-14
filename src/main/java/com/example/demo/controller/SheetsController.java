@@ -27,6 +27,11 @@ public class SheetsController {
 	        this.googleSheetsService = googleSheetsService;
 	    }
 
+	 @GetMapping("/")
+    public String home(){
+        return "Spring Boot backend is running on Render";
+    }
+
 	    @PostMapping("/add")
 	    public String addLedger(@RequestBody LedgerRequest request, @RequestParam String sheetName) {
 //	    	System.out.println("request details "+request);
