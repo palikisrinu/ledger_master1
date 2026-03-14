@@ -17,7 +17,9 @@ public class SheetsConfig {
 	
 	 public static Sheets getSheetsService() throws Exception {
 
-	        InputStream in = new ClassPathResource("ledger-app-487612-7d4f196f2ee3.json").getInputStream();
+	       String json = System.getenv("GOOGLE_CREDENTIALS");
+
+			InputStream stream = new ByteArrayInputStream(json.getBytes());
 
 	        GoogleCredentials credentials = GoogleCredentials
 	                .fromStream(in)
